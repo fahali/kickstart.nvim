@@ -27,7 +27,7 @@ local bundles = {
   vim.fn.glob '~/Development/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-*.jar',
 }
 
-vim.list_extend(bundles, vim.split(vim.fn.glob('~/Development/vscjava.vscode-java-test-0.43.2/extension/server/*.jar', true), '\n'))
+vim.list_extend(bundles, vim.split(vim.fn.glob('~/Development/vscode-java-test/server/*.jar', true), '\n'))
 
 local config = {
   flags = {
