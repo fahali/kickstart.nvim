@@ -20,7 +20,7 @@ local on_attach = function(_, buffer)
   vim.keymap.set({ 'n' }, '<leader>vc', jdtls.test_class, mk_opts 'Test class (DAP)')
   vim.keymap.set({ 'n' }, '<leader>vm', jdtls.test_nearest_method, mk_opts 'Test method (DAP)')
 
-  require('jdtls').setup_dap { hotcodereplace = 'auto' }
+  jdtls.setup_dap { hotcodereplace = 'auto' }
 end
 
 local bundles = {
